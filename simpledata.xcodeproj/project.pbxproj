@@ -11,6 +11,9 @@
 		CEA6F22425177A890051EC84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6F22325177A890051EC84 /* ContentView.swift */; };
 		CEA6F22625177A8A0051EC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA6F22525177A8A0051EC84 /* Assets.xcassets */; };
 		CEA6F22925177A8A0051EC84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA6F22825177A8A0051EC84 /* Preview Assets.xcassets */; };
+		CEA6F23325177AB40051EC84 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6F23225177AB40051EC84 /* CoreData.swift */; };
+		CEA6F23825177AFB0051EC84 /* simpledata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEA6F23625177AFB0051EC84 /* simpledata.xcdatamodeld */; };
+		CEA6F23C25177B310051EC84 /* Simple+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6F23A25177B310051EC84 /* Simple+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		CEA6F22525177A8A0051EC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA6F22825177A8A0051EC84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEA6F22A25177A8A0051EC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA6F23225177AB40051EC84 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		CEA6F23725177AFB0051EC84 /* simpledata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simpledata.xcdatamodel; sourceTree = "<group>"; };
+		CEA6F23A25177B310051EC84 /* Simple+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		CEA6F22025177A890051EC84 /* simpledata */ = {
 			isa = PBXGroup;
 			children = (
+				CEA6F23125177AA20051EC84 /* DataModel */,
 				CEA6F22125177A890051EC84 /* simpledataApp.swift */,
 				CEA6F22325177A890051EC84 /* ContentView.swift */,
 				CEA6F22525177A8A0051EC84 /* Assets.xcassets */,
@@ -67,6 +74,16 @@
 				CEA6F22825177A8A0051EC84 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEA6F23125177AA20051EC84 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6F23A25177B310051EC84 /* Simple+CoreDataClass.swift */,
+				CEA6F23225177AB40051EC84 /* CoreData.swift */,
+				CEA6F23625177AFB0051EC84 /* simpledata.xcdatamodeld */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA6F22425177A890051EC84 /* ContentView.swift in Sources */,
+				CEA6F23C25177B310051EC84 /* Simple+CoreDataClass.swift in Sources */,
+				CEA6F23325177AB40051EC84 /* CoreData.swift in Sources */,
 				CEA6F22225177A890051EC84 /* simpledataApp.swift in Sources */,
+				CEA6F23825177AFB0051EC84 /* simpledata.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = systems.adversarial.simpledata;
+				PRODUCT_BUNDLE_IDENTIFIER = simpledata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = systems.adversarial.simpledata;
+				PRODUCT_BUNDLE_IDENTIFIER = simpledata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +348,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEA6F23625177AFB0051EC84 /* simpledata.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEA6F23725177AFB0051EC84 /* simpledata.xcdatamodel */,
+			);
+			currentVersion = CEA6F23725177AFB0051EC84 /* simpledata.xcdatamodel */;
+			path = simpledata.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEA6F21625177A890051EC84 /* Project object */;
 }
